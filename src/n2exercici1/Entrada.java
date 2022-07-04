@@ -18,8 +18,8 @@ public class Entrada {
 				control = true;
 			} catch (InputMismatchException e) {
 				System.out.println("Debe introducir un valor del tipo byte");
-				entrada.next();
 			}
+			entrada.nextLine();
 		} while (control == false);
 		return entradaUser;
 	}
@@ -35,8 +35,8 @@ public class Entrada {
 				control = true;
 			} catch (InputMismatchException e) {
 				System.out.println("Debe introducir un valor del tipo integer");
-				entrada.next();
 			}
+			entrada.nextLine();
 		} while(control == false);
 		return entradaUser;
 	}
@@ -52,8 +52,8 @@ public class Entrada {
 				control = true;
 			} catch (InputMismatchException e) {
 				System.out.println("Debe intoducir un valor del tipo float");
-				entrada.next();
 			}
+			entrada.nextLine();
 		} while (control == false);
 		return entradaUser;
 	}
@@ -68,8 +68,8 @@ public class Entrada {
 				control = true;
 			} catch (InputMismatchException e) { 
 				System.out.println("Debe introducir un valor del tipo double");
-				entrada.next();
 			}
+			entrada.nextLine();
 		} while (control == false);
 		return entradaUser;
 	}
@@ -86,9 +86,8 @@ public class Entrada {
 				control = true;
 			} catch (Exception e) {
 				System.out.println("Debe introducir un valor del tipo char");
-				entrada.next();
 			}
-		
+			entrada.nextLine();
 		} while (control == false);
 		return entradaUser;
 	}
@@ -104,8 +103,8 @@ public class Entrada {
 				control = true;
 		} catch (Exception e) {
 			System.out.println("Debe introducir un valor del tipo String");
-			entrada.next();
 		}
+		entrada.nextLine();
 		} while (control == false);
 		return entradaUser;
 	}
@@ -127,8 +126,8 @@ public class Entrada {
 		}
 			} catch (Exception e) {
 				System.out.println("Debe introducir s en caso afirmativo o n en caso negativo");
-				entrada.next();
 			}
+			entrada.nextLine();
 		} while (control == false);
 		return resultat;
 	}

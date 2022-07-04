@@ -5,12 +5,14 @@ import java.util.ArrayList;
 public class Venda {
 	//Atributos
 	private double precioTotal;
-	static ArrayList<Producte> productes = new ArrayList <Producte>();
+	private ArrayList<Producte> productes = new ArrayList <Producte>();
 
 	//Constructor
+	public Venda() {
+	}
 	public Venda(double precioTotal, ArrayList<Producte> productes) {
 		this.precioTotal = precioTotal;
-		Venda.productes = productes;
+		this.productes = productes;
 	}
 	
 	//Getter
@@ -18,7 +20,7 @@ public class Venda {
 		return this.precioTotal;
 	}
 	public ArrayList<Producte> getProductes() {
-		return Venda.productes;
+		return this.productes;
 	}
 		
 	//Setter
@@ -26,11 +28,11 @@ public class Venda {
 		this.precioTotal = precioTotal;
 	}
 	public void setProductes(ArrayList<Producte> productes) {
-		Venda.productes = productes;
+		this.productes = productes;
 	}
 
 	
-	public static void calcularTotal() /*throws VendaBuidaException*/ {
+	public void calcularTotal() /*throws VendaBuidaException*/ {
 		double precioTotal = 0;
 
 		try {
